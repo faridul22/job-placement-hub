@@ -1,0 +1,25 @@
+.header-container img {
+    width: 150vh;
+}
+
+/* .header-info {
+    margin: auto 0;
+} */
+
+.header-title {
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 70px;
+}
+
+.header-title span {
+    color: #9873FF;
+}
+
+@media only screen and (max-width:576px) {
+    .header-title {
+        font-family: 'Manrope';
+        font-weight: 800;
+        font-size: 40px;
+    }
+}
