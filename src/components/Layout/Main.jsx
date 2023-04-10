@@ -4,7 +4,7 @@ import NavigationBar from '../NavigationBar/NavigationBar';
 
 const Main = () => {
     return (
-        <div className='bg-light pt-3'>
+        <div className=''>
             <NavigationBar></NavigationBar>
             <Outlet></Outlet>
         </div>

@@ -1,10 +1,18 @@
 import React from 'react';
 import Header from '../Header/Header';
+import JobCategoryList from '../JobCategoryList/JobCategoryList';
 
 const Home = () => {
     return (
-        <div className='w-75 mx-auto'>
-            <Header></Header>
+        <div>
+            <div className='bg-light'>
+                <div className='w-75 mx-auto'>
+                    <Header></Header>
+                </div>
+            </div>
+            <div className='container'>
+                <JobCategoryList></JobCategoryList>
+            </div>
         </div>
     );
 };

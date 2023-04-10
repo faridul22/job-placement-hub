@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "img": "/src/assets/Icons/chip 1.png",
+        "jobTitle": "Software Engineer",
+        "availableJob": "300 Jobs Available"
+    },
+    {
+        "id": "2",
+        "img": "/src/assets/Icons/business 1.png",
+        "jobTitle": "Marketing Manager",
+        "availableJob": "100+ Jobs Available"
+    },
+    {
+        "id": "3",
+        "img": "/src/assets/Icons/accounts 1.png",
+        "jobTitle": "Graphic Designer",
+        "availableJob": "150 Jobs Available"
+    },
+    {
+        "id": "4",
+        "img": "/src/assets/Icons/social-media 1.png",
+        "jobTitle": "Data Analyst",
+        "availableJob": "224 Jobs Available"
+    }
+]
