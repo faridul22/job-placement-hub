@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleDollarToSlot, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 const FeaturedJobsCard = ({ featuredJob }) => {
-    const { image, jobTitle, companyName, jobType, WhereSitsWork, location, salary } = featuredJob;
+    const { id, image, jobTitle, companyName, jobType, WhereSitsWork, location, salary } = featuredJob;
     return (
         <div className="col">
             <div className="h-100 border rounded p-5">
@@ -28,7 +28,7 @@ const FeaturedJobsCard = ({ featuredJob }) => {
                         Salary: {salary}
                     </small>
                 </div>
-                <Link to='/'><button className='btn-style'>View Details</button></Link>
+                <Link to={`/jobDetails/${id}`}><button className='btn-style'>View Details</button></Link>
             </div>
         </div>
     );
