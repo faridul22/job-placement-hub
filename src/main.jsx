@@ -17,6 +17,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+
+      {
+        path: '*',
+        element: <dive>444444444044444444</dive>
       }
     ]
   },

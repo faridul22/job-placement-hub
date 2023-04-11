@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import JobCategoryList from '../JobCategoryList/JobCategoryList';
+import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             </div>
             <div className='container'>
                 <JobCategoryList></JobCategoryList>
+                <FeaturedJobs></FeaturedJobs>
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ const Header = () => {
                 <button className='btn-style'>Get Started</button>
             </div>
             <div className="col-md-6 col-lg-6 col-sm-12 pb-0 mb-0 my-auto">
-                <img className='img-fluid' src={'../../../src/assets/Images/P3OLGJ1 copy 1.png'} alt="" />
+                <img className='img-fluid' src={'https://i.ibb.co/stNYvxg/P3-OLGJ1-copy-1.png'} alt="" />
             </div>
         </div>
     );
