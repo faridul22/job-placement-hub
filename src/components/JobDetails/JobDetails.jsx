@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './JobDetails.css'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { addToDb } from '../../utilities/fakedb';
 const JobDetails = () => {
 
     const details = useParams();
@@ -8,22 +9,22 @@ const JobDetails = () => {
 
     const [job, setJob] = useState([])
 
-
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/faridul22/job-placement-hub-jobs-data-api/main/featuredJobsData.json')
             .then(res => res.json())
             .then(data => setJob(data))
     }, [])
 
-
     const singleJob = (job.length > 0) ? job.find(item => item.id == details.jobId) : {};
     // console.log(singleJob)
 
     const { id, jobDescription, jobResponsibilities, educationalRequirements, experiences, salary, jobTitle, phone, email, location } = singleJob;
-    console.log(id)
+    // console.log(id)
 
 
-
+    const handleAppliedJob = (id) => {
+        addToDb(id)
+    }
     return (
         <div>
             <h3 className='text-center bg-light pb-5'>Job Details</h3>
@@ -64,7 +65,7 @@ const JobDetails = () => {
                             <p>Address: <small>{location}</small></p>
                         </div>
                     </div>
-                    <button className='btn-style w-100 mt-3'>Apply Now</button>
+                    <button className='btn-style w-100 mt-3' onClick={() => handleAppliedJob(id)}>Apply Now</button>
                 </div>
             </div>
         </div>
