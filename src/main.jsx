@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Main from './components/Layout/Main';
 import Home from './components/Home/Home';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
 
       {
         path: '*',
-        element: <dive>444444444044444444</dive>
+        element: <ErrorPage></ErrorPage>
       }
     ]
   },
