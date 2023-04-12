@@ -12,6 +12,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Chart from './components/Chart/Chart';
+import Blogs from './components/Blogs/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,10 @@ const router = createBrowserRouter([
         path: 'statistics',
         element: <Chart></Chart>
       },
-
+      {
+        path: 'blog',
+        element: <Blogs></Blogs>
+      },
       {
         path: '*',
         element: <ErrorPage></ErrorPage>
