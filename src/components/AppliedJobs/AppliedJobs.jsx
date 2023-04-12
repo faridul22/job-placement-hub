@@ -43,6 +43,12 @@ const AppliedJobs = () => {
         <div>
             <h3 className='text-center bg-light pb-5'>Applied Jobs</h3>
             <div className='my-5 py-5'>
+                <div className='container d-flex justify-content-end'>
+                    <div>
+                        <button className='btn btn-outline-secondary mb-2 me-2'>Remote</button>
+                        <button className='btn btn-outline-secondary mb-2 me-2'>Onsite</button>
+                    </div>
+                </div>
                 {
                     appliedJob.map((job) => <AppliedJobCard
                         key={job.id}
