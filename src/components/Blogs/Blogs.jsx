@@ -24,6 +24,15 @@ const Blogs = () => {
                         </div>
                     </div>
                 </article>
+                <article className="my-5">
+                    <div className="card h-100">
+                        <div className="card-body p-5">
+                            <h5 className="card-title text-center pb-3"> What is <strong>useRef</strong>
+                            </h5>
+                            <p className="card-text">React's useRef hook is a way to create a mutable reference to a value that persists across re-renders. It's commonly used to access and modify DOM elements in a component, but it can also be used to store any other mutable value that needs to persist between re-renders.One of the main use cases for useRef is accessing DOM elements in a component. We can use useRef to create a reference to a DOM element and then pass that reference to other parts of our code, such as event handlers or animations. For example, we might use useRef to create a reference to a canvas element and then use that reference to draw graphics on the canvas.useRef can also be used to store other mutable values that need to persist between re-renders, such as counters or timers. Unlike useState, useRef does not trigger a re-render when its value changes, which makes it useful for storing values that do not affect the visual representation of the component.However, it's important to note that useRef should not be used to trigger re-renders or update the state of a component. Updating a useRef value does not trigger a re-render, and modifying the value directly can cause bugs and unexpected behavior. Instead, use useState or useReducer to manage the state of our component.</p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     );
